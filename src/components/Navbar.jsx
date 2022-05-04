@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import { useEffect, useState } from "react";
 
+import styles from "../styles/Navbar.module.css";
+
 const fetcher = async (url) => {
   const res = await fetch(url);
   const data = await res.json();
@@ -24,13 +26,19 @@ export default function Navbar() {
 
   return (
     <div>
-      <h1>Nome: {name}</h1>
-      <Link href="/paginaUm">
-        <a>Pagina 1</a>
-      </Link>
-      <Link href="/paginaDois">
-        <a>Pagina 2</a>
-      </Link>
+      <ul className={styles.navbar}>
+        <h1>Nome: {name}</h1>
+        <li>
+          <Link href="/paginaUm">
+            <a>Pagina 1</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/paginaDois">
+            <a>Pagina 2</a>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }
