@@ -38,6 +38,11 @@ export default function Navbar() {
             <a>Pagina 2</a>
           </Link>
         </li>
+        <li>
+          <Link href="/toDos">
+            <a>Tarefas</a>
+          </Link>
+        </li>
       </ul>
     </div>
   );
