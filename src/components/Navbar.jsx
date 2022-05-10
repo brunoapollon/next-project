@@ -25,7 +25,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.containerNavbar}>
       <ul className={styles.navbar}>
         <h1>Nome: {name}</h1>
         <li>
