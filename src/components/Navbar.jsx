@@ -39,7 +39,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/toDos">
+          <Link href="/todos">
             <a>Tarefas</a>
           </Link>
         </li>

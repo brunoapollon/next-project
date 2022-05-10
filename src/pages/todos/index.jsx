@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import styles from "../styles/Todo.module.css";
+import Navbar from "../../components/Navbar";
+import styles from "../../styles/Todo.module.css";
 
 export async function getStaticProps() {
   const data = await fetch("https://jsonplaceholder.typicode.com/todos");
